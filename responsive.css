@@ -99,13 +99,19 @@ html {
         backdrop-filter: blur(100px);
     }
 
+    .conteudo-principal-escrito {
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+        border: none;
+    }
+
     .conteudo-principal-escrito-titulo {
       font-size: 6vw;
     }
 
     .conteudo-principal-escrito-texto {
         font-weight: 300;
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .botao-menu {

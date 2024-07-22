@@ -43,7 +43,7 @@ html {
 
 .cabecalho-menu-item {
     font-family: 'Jost', sans-serif;
-    color: rgb(255, 142, 66);
+    color: rgb(255, 113, 19);
     font-weight: 100;
     font-size: 15px;
 }
@@ -72,11 +72,15 @@ main {
 }
 
 .conteudo-principal-escrito {
+    padding: 5%;
     margin-top: 12vw;
     text-align: center;
     text-shadow: 2px 1px 2px black;
     font-family: 'Jost', sans-serif;
-    color: rgb(255, 142, 66);
+    color: rgb(255, 113, 19);
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+    border: 2px solid rgb(255, 113, 19);
 }
 
 .conteudo-principal-escrito-titulo {
@@ -107,15 +111,15 @@ main {
     font-weight: 300;
     text-decoration: none;
     text-shadow: 2px 1px 2px black;
-    color: rgb(255, 142, 66);
-    border: 2px solid rgb(255, 142, 66);
+    color: rgb(255, 113, 19);
+    border: 2px solid rgb(255, 113, 19);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
   
 .botao-menu:hover {
-    background-color: rgb(255, 142, 66);
+    background-color: rgb(255, 113, 19);
     text-shadow: 0px 0px 0px black;
     color: black;
 }
@@ -128,8 +132,8 @@ main {
     font-size: 0.8vw;
     font-weight: 300;
     text-decoration: none;
-    color: rgb(255, 142, 66);
-    border: 2px solid rgb(255, 142, 66);
+    color: rgb(255, 113, 19);
+    border: 2px solid rgb(255, 113, 19);
     text-shadow: 2px 1px 2px black;
     position: fixed;
     bottom: 1%;
@@ -142,7 +146,7 @@ main {
 }
   
 #botao-linguagem:hover {
-    background-color: rgb(255, 142, 66);
+    background-color: rgb(255, 113, 19);
     text-shadow: 0px 0px 0px black;
     color: black;
 }
@@ -155,7 +159,7 @@ main {
     font-family: 'Jost', sans-serif;
     font-weight: 200;
     font-size: 2vw;
-    color: rgb(255, 142, 66);
+    color: rgb(255, 113, 19);
     pointer-events: none;
 }
 
