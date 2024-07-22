@@ -1,0 +1,163 @@
+.conteudo-principal-escrito-botao:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+.rodape-botao:hover {
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes bluroncemore {
+    from {
+        -webkit-backdrop-filter: blur(0px);
+        backdrop-filter: blur(0px);
+    }
+    to {
+        -webkit-backdrop-filter: blur(100px);
+        backdrop-filter: blur(100px);
+    }
+}
+
+@keyframes bluronceagain {
+    from {
+        -webkit-backdrop-filter: blur(100px);
+        backdrop-filter: blur(100px);
+    }
+    to {
+        -webkit-backdrop-filter: blur(0px);
+        backdrop-filter: blur(0px);
+    }
+}
+
+@keyframes blurin {
+    from {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+    }
+    to {
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+    }
+}
+
+@keyframes blurout {
+    from {
+        -webkit-filter: blur(100px);
+        filter: blur(100px);
+    }
+    to {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+    }
+}
+
+html {
+    opacity: 1;
+    -webkit-animation: fadein 1.5s ease-in-out, blurout 1s ease-in-out;
+    animation: fadein 1.5s ease-in-out, blurout 1s ease-in-out;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .conteudo {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+
+    .gallery {
+        width: 80%;
+        --num-cols: 4;
+    }
+
+    .corpo {
+        height: 100%;
+        width: 100%;
+        -webkit-backdrop-filter: blur(100px);
+        backdrop-filter: blur(100px);
+    }
+
+    .conteudo-principal-escrito-titulo {
+      font-size: 6vw;
+    }
+
+    .conteudo-principal-escrito-texto {
+        font-weight: 300;
+        font-size: 4vw;
+    }
+
+    .botao-menu {
+        font-size: 4vw;
+    }
+
+    #botao-linguagem {
+        font-size: 4vw;
+    }
+
+    .galeria-nome {
+        font-weight: 300;
+        font-size: 4vw;
+    }
+
+    #gallerybody {
+        height: 100vh;
+    }
+  }
+
+.gallery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.gallery__item img:hover {
+    box-shadow: 0px 0px 0px 5px rgb(0, 0, 0);
+    transform: scale(105%);
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+    -webkit-animation: bluroncemore 0.5s ease-in-out;
+    animation: bluroncemore 0.5s ease-in-out;
+}
+
+.modal img {
+    border-radius: 1vw;
+    max-height: 90vh;
+    max-width: 90vw;
+    object-fit: contain;
+    -webkit-animation: fadein 0.2s ease-in-out, blurout 0.4s ease-in-out;
+    animation: fadein 0.2s ease-in-out, blurout 0.4s ease-in-out;
+    box-shadow: 0 0 5px 0 black;
+}
