@@ -30,7 +30,6 @@ html {
 .cabecalho {
     height: 70px;
     display: flex;
-    position: fixed;
     flex-direction: row;
     align-items: center;
     justify-content: left;
